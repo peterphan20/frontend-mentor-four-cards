@@ -4,7 +4,7 @@ import TextCard from "./components/TextCard";
 
 const App = () => {
 	return (
-		<div className="container">
+		<div className="app-container">
 			<PageBanner />
 			<TextCard />
 		</div>

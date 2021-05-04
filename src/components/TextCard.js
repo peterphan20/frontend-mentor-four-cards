@@ -3,26 +3,30 @@ import { magnifyingGlass, house, lightBulb, computer } from "../images/imageURL"
 
 const TextCard = () => {
 	return (
-		<div>
-			<div className="card">
-				<h1>Supervisor</h1>
-				<p>Monitors activity to identify project roadblocks</p>
-				{magnifyingGlass}
+		<div className="card-container">
+			<div className="card supervisor">
+				<h2 className="card-title">Supervisor</h2>
+				<p className="card-description">Monitors activity to identify project roadblocks</p>
+				<div className="img">{magnifyingGlass}</div>
 			</div>
-			<div className="card">
-				<h1>Team Builder</h1>
-				<p>Scans our talent network to create the optimal team for your project</p>
-				{house}
+			<div className="card team-builder">
+				<h2 className="card-title">Team Builder</h2>
+				<p className="card-description">
+					Scans our talent network to create the optimal team for your project
+				</p>
+				<div className="img">{house}</div>
 			</div>
-			<div className="card">
-				<h1>Karma</h1>
-				<p>Regularly evaluates our talent to ensure quality</p>
-				{lightBulb}
+			<div className="card karma">
+				<h2 className="card-title">Karma</h2>
+				<p className="card-description">Regularly evaluates our talent to ensure quality</p>
+				<div className="img">{lightBulb}</div>
 			</div>
-			<div className="card">
-				<h1>Calculator</h1>
-				<p>Uses data from past projects to provide better delivery estimates</p>
-				{computer}
+			<div className="card calculator">
+				<h2 className="card-title">Calculator</h2>
+				<p className="card-description">
+					Uses data from past projects to provide better delivery estimates
+				</p>
+				<div className="img">{computer}</div>
 			</div>
 		</div>
 	);

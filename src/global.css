@@ -4,3 +4,54 @@
 	padding: 0px;
 	box-sizing: border-box;
 }
+body {
+	background-color: hsl(0, 0%, 98%);
+}
+div.app-container {
+	font-size: 15px;
+  padding: 75px 30px 50px 30px;
+}
+div.page-banner {
+	text-align: center;
+}
+.banner-header {
+	font-weight: 400;
+}
+.banner-header-bold {
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.banner-description {
+	font-weight: 200;
+	margin-bottom: 60px;
+}
+.card {
+	background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	border-radius: 6px;
+  box-shadow: 0 0 20px hsl(229, 6%, 66%);
+  padding: 15px;
+  margin-bottom: 30px;
+}
+.card.supervisor {
+	border-top: 5px solid hsl(180, 62%, 55%);
+}
+.card.team-builder {
+	border-top: 5px solid hsl(0, 78%, 62%);
+}
+.card.karma {
+	border-top: 5px solid hsl(34, 97%, 64%);
+}
+.card.calculator {
+	border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.card-description{
+  font-weight: 200;
+}
+.img{
+  align-self: flex-end;
+  padding-top: 35px;
+}
