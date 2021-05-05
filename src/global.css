@@ -8,8 +8,12 @@ body {
 	background-color: hsl(0, 0%, 98%);
 }
 div.app-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	font-size: 15px;
-  padding: 75px 30px 50px 30px;
+	padding: 75px 30px 50px 30px;
 }
 div.page-banner {
 	text-align: center;
@@ -27,13 +31,13 @@ div.page-banner {
 }
 .card {
 	background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	border-radius: 6px;
-  box-shadow: 0 0 20px hsl(229, 6%, 66%);
-  padding: 15px;
-  margin-bottom: 30px;
+	box-shadow: 0 0 20px hsl(229, 6%, 66%);
+	padding: 15px;
+	margin-bottom: 30px;
 }
 .card.supervisor {
 	border-top: 5px solid hsl(180, 62%, 55%);
@@ -47,11 +51,43 @@ div.page-banner {
 .card.calculator {
 	border-top: 5px solid hsl(212, 86%, 64%);
 }
-
-.card-description{
-  font-weight: 200;
+.card-description {
+	font-weight: 200;
 }
-.img{
-  align-self: flex-end;
-  padding-top: 35px;
+.img {
+	align-self: flex-end;
+	padding-top: 35px;
+}
+
+@media (min-width: 1440px) {
+	.card-container {
+		display: flex;
+		gap: 30px;
+	}
+	.banner-header {
+		font-size: 35px;
+	}
+	.banner-header-bold {
+		font-size: 35px;
+	}
+	.banner-description {
+		padding: 0px 45em;
+	}
+	.card {
+		padding: 30px;
+		margin: 0;
+		width: 350px;
+		height: 250px;
+	}
+	.card-center {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+	.card.supervisor {
+		margin-top: 150px;
+	}
+	.card.calculator {
+		margin-top: 150px;
+	}
 }
